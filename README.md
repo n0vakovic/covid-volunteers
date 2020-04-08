@@ -1,6 +1,6 @@
 # covid-volunteers
 
-This repository stores the code for the pobedimokoronu.com, Serbian localization of https://helpwithcovid.com/ website.
+This repository stores the code for the [http://pobedimokoronu.com](pobedimokoronu.com), Serbian localization of https://helpwithcovid.com/ website.
 
 The stack is:
 - ruby on rails
