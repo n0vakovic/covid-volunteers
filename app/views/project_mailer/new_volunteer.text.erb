@@ -1,21 +1,21 @@
-Hey there!
+<%= I18n.t("project_mailer.new_volunteer.hey_there", :default => "Hey there!") %>
 
-You got a new volunteer for your project <%= @project.name %>!
+<%= I18n.t("project_mailer.new_volunteer.you_got_a_new_volunteer_for_your_project", :default => "You got a new volunteer for your project ") %><%= @project.name %>!
 
-Current volunteers are visible on your project page: <%= url_for project_url(@project) %>.
+<%= I18n.t("project_mailer.new_volunteer.current_volunteers_are_visible_on_your_project_page", :default => "Current volunteers are visible on your project page: ") %><%= url_for project_url(@project) %>.
 
-Volunteer Details:
+<%= I18n.t("project_mailer.new_volunteer.volunteer_details", :default => "Volunteer Details:") %>
 ------------------
 
-Name: <%= @user.name %>
-Email: <%= @user.email %>
+<%= I18n.t("project_mailer.new_volunteer.name", :default => "Name: ") %><%= @user.name %>
+<%= I18n.t("project_mailer.new_volunteer.email", :default => "Email: ") %><%= @user.email %>
 
-About:
+<%= I18n.t("project_mailer.new_volunteer.about", :default => "About:") %>
 <%= @user.about %>
 
 
 
-Notes:
+<%= I18n.t("project_mailer.new_volunteer.notes", :default => "Notes:") %>
 <%- if @project.volunteered_users.count >= VOLUNTEERS_REQUIRED_FOR_FUNDING %>
 * ** Since you have over <%= VOLUNTEERS_REQUIRED_FOR_FUNDING %> volunteers you can now apply for funding. Visit your project page. **
 <%- end -%>
@@ -23,4 +23,4 @@ Notes:
 * We have added "Skills required" tags to the project set up page. Adding this information will help people discover projects they are a good fit for easily.
 
 - Your friends at helpwithcovid.com
-For any feedback or questions regarding helpwithcovid.com, let us know at https://discord.gg/875AhXS.
+<%= I18n.t("project_mailer.new_volunteer.feedback", :default => "For any feedback or questions regarding helpwithcovid.com, let us know at https://discord.gg/875AhXS.") %>

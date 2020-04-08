@@ -2,27 +2,27 @@
   <div class="hidden sm:flex-2 sm:flex sm:items-center sm:justify-between">
     <div>
       <p class="text-sm leading-5 text-gray-700">
-        Showing
+        <%= I18n.t("kaminari.paginator.showing", :default => "Showing") %>
         <span class="font-medium"><%= @index_from %></span>
-          to
+        <%= I18n.t("kaminari.paginator.to", :default => "to") %>
         <span class="font-medium"><%= @index_to %></span>
-        of
+        <%= I18n.t("kaminari.paginator.of", :default => "of") %>
         <span class="font-medium"><%= @total_count %></span>
-        results
-    </p>
+        <%= I18n.t("kaminari.paginator.results", :default => "results") %>
+      </p>
   </div>
 </div>
 
 <%= paginator.render do -%>
   <div class="flex-1 flex justify-between sm:hidden">
     <% if !current_page.first? %>
-      <%= link_to 'Previous', prev_page_tag.url, :class => 'relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150', :id => 'pnprevious' %>
+      <%= link_to I18n.t("kaminari.paginator.previous", :default => 'Previous'), prev_page_tag.url, :class => 'relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150', :id => 'pnprevious' %>
     <% else %>
       <%= link_to '', ''%>
     <% end %>
 
     <% if !current_page.last? %>
-      <%= link_to 'Next', next_page_tag.url, :class => 'ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150', :id => 'pnnext' %>
+      <%= link_to I18n.t("kaminari.paginator.next", :default => 'Next'), next_page_tag.url, :class => 'ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150', :id => 'pnnext' %>
     <% end %>
   </div>
 
@@ -34,3 +34,4 @@
   </span>
 </div>
 <% end %>
+<!-- div is not closed -->

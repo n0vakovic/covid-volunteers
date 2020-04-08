@@ -9,9 +9,9 @@
       <p class="mt-1 text-sm leading-5 text-gray-500">
         <%= @projects_subheader %>
         <% if current_user.blank? %>
-          <%= link_to 'Sign up', new_user_registration_path, class: 'text-indigo-500' %> to volunteer.
+          <%= link_to I18n.t("projects.index.sign_up", :default => 'Sign up'), new_user_registration_path, class: 'text-indigo-500' %> to volunteer.
         <% elsif !current_user.has_complete_profile? %>
-          <%= link_to 'Fill out your profile', edit_user_registration_path, class: 'text-indigo-500' %> to volunteer.
+          <%= link_to I18n.t("projects.index.fill_out_your_profile", :default => 'Fill out your profile'), edit_user_registration_path, class: 'text-indigo-500' %> to volunteer.
         <% end %>
       </p>
     </div>
@@ -19,7 +19,7 @@
       <span class="inline-flex rounded-md shadow-sm">
         <%= link_to new_project_path do %>
           <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700">
-            Create project
+            <%= I18n.t("projects.index.create_project", :default => "Create project") %>
           </button>
         <% end %>
       </span>
@@ -70,7 +70,7 @@
                   <% project_volunteer_class = project.volunteered_users.count > 0 ? "bg-green-100 text-green-800" : "bg-yellow-100 text-yellow-800" %>
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full <%= project_volunteer_class %>">
                     <% if project.volunteered_users.count == 0 %>
-                      no volunteers
+                      <%= I18n.t("projects.index.no_volunteers", :default => "no volunteers") %>
                     <% else %>
                       <%= pluralize(project.volunteered_users.count, 'volunteer') %>
                     <% end %>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="mt-2 flex items-center text-xs leading-5 text-gray-500 sm:mt-0">
                   <span>
-                    created
+                    <%= I18n.t("projects.index.created", :default => "created") %>
                     <time><%= distance_of_time_in_words_to_now project.created_at %> ago</time>
                   </span>
                 </div>
