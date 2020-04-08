@@ -37,6 +37,9 @@ yarn-debug.log*
 
 .DS_Store
 
+.ruby-version
+.ruby-gemset
+
 #Ignore IntelliJ
 /.idea/*
 

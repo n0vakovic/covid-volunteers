@@ -49,6 +49,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'mina', require: false
   gem 'mina-puma', require: false,  github: 'untitledkingdom/mina-puma'
+  gem 'i15r'
+  gem 'i18n-tasks', '~> 0.9.31'
 end
 
 group :test do

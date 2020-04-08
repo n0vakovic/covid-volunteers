@@ -4,12 +4,12 @@
   <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-no-wrap">
     <div class="ml-4 mt-4">
       <h3 class="text-lg leading-6 font-medium text-gray-900">
-        Offers, deals, and benefits from organizations that want to help out with COVID-19.
+        <%= I18n.t("offers.index.offers_deals_and_benefits_from_organizations_that_want_to_help_out_with_covid-19", :default => "Offers, deals, and benefits from organizations that want to help out with COVID-19.") %>
       </h3>
       <p class="mt-1 text-sm leading-5 text-gray-500">
-        Organizations are helping out COVID-19 projects too.
+        <%= I18n.t("offers.index.organizations_are_helping_out_covid-19_projects_too", :default => "Organizations are helping out COVID-19 projects too.") %>
         <% if current_user.blank? %>
-          <%= link_to 'Sign up', new_user_registration_path, class: 'text-indigo-500' %> to post an offer.
+          <%= link_to I18n.t("offers.index.sign_up", :default => 'Sign up'), new_user_registration_path, class: 'text-indigo-500' %> to post an offer.
         <% end %>
       </p>
     </div>
@@ -17,7 +17,7 @@
       <span class="inline-flex rounded-md shadow-sm">
         <%= link_to new_offer_path do %>
           <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700">
-            Create offer
+            <%= I18n.t("offers.index.create_offer", :default => "Create offer") %>
           </button>
         <% end %>
       </span>
@@ -54,7 +54,7 @@
               </div>
               <div class="mt-2 flex items-center text-xs leading-5 text-gray-500 sm:mt-0">
                 <span>
-                  created
+                  <%= I18n.t("offers.index.created", :default => "created") %>
                   <time><%= distance_of_time_in_words_to_now offer.created_at %> ago</time>
                 </span>
               </div>

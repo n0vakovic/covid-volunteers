@@ -30,4 +30,235 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  devise:
+    confirmations:
+      new:
+        email: Email
+        resend_confirmation_instructions: Resend confirmation instructions
+    mailer:
+      confirmation_instructions:
+        confirm_my_account: Confirm my account
+        you_can_confirm_your_account_email_through_the_link_below: You can confirm your account email through the link below
+      password_change:
+        were_contacting_you_to_notify_you_that_your_password_has_been_changed: Were contacting you to notify you that your password has been changed
+      reset_password_instructions:
+        change_my_password: Change my password
+        if_you_didnt_request_this_please_ignore_this_email: If you didnt request this please ignore this email
+        someone_has_requested_a_link_to_change_your_password_you_can_do_this_through_the_link_below: Someone has requested a link to change your password you can do this through the link below
+        your_password_wont_change_until_you_access_the_link_above_and_create_a_new_one: Your password wont change until you access the link above and create a new one
+      unlock_instructions:
+        click_the_link_below_to_unlock_your_account: Click the link below to unlock your account
+        unlock_my_account: Unlock my account
+        your_account_has_been_locked_due_to_an_excessive_number_of_unsuccessful_sign_in_attempts: Your account has been locked due to an excessive number of unsuccessful sign in attempts
+    passwords:
+      edit:
+        change_my_password: Change my password
+        change_your_password: Change your password
+        confirm_new_password: Confirm new password
+        new_password: New password
+      new:
+        email_address: Email address
+        forgot_your_password: Forgot your password
+        or: Or
+        send_me_reset_password_instructions: Send me reset password instructions
+    registrations:
+      edit:
+        save_profile: Save profile
+        this_information_will_be_displayed_publicly_fill_everything_out_to_be_able_to_volunteer_for_projects: This information will be displayed publicly fill everything out to be able to volunteer for projects
+        your_profile: Your profile
+      index:
+        sign_up_to_volunteer: Sign up to volunteer
+        they_have_all_offered_to_help_out_with_covid-19_related_projects: They have all offered to help out with covid-19 related projects
+        volunteers_from_around_the_world: Volunteers from around the world
+      new:
+        email_address: Email address
+        or: Or
+        password: Password
+        password_confirmation: Password confirmation
+        sign_up: Sign up
+        sign_up_for_an_account: Sign up for an account
+        youll_be_able_to_either_create_a_project_or_volunteer_after: You'll be able to either create a project or volunteer after
+      profile_form:
+        about_you: About you
+        city_state_country_ideally_dont_be_too_specific: City state country ideally dont be too specific
+        email_address: Email address
+        for_instance_your_arxiv_github_linked_twitter_or_youtube_one_per_line: For instance your arxiv github linked twitter or youtube one per line
+        i_want_my_information_including_my_email_to_be_visible_in_the_public_directory: I want my information including my email to be visible in the public directory
+        leave_blank_if_you_dont_want_to_change_it: Leave blank if you dont want to change it
+        level_of_availability: Level of availability
+        links_to_places_where_people_can_get_to_know_you_better: Links to places where people can get to know you better
+        name: Name
+        old_password: Old password
+        only_if_you_are_changing_your_password: Only if you are changing your password
+        options: Options
+        or_change_your_email_password: Or change your email password
+        password: Password
+        password_confirmation: Password confirmation
+        skills_you_can_help_with: Skills you can help with
+        visibility_visibility_class_: 'Visibility visibility class '
+        your_ballpark_location: Your ballpark location
+        your_full_name: Your full name
+      show:
+        about: About
+        delete: Delete
+        email: Email
+        interesting_links: Interesting links
+        level_of_availability: Level of availability
+        location: Location
+        skills: Skills
+    sessions:
+      new:
+        email_address: Email address
+        login: Login
+        or: Or
+        password: Password
+        remember_me: Remember me
+        sign_in: Sign in
+    shared:
+      error_messages:
+        resource_resourceclassmodel_namehumandowncase: Resource resourceclassmodel namehumandowncase
+    unlocks:
+      new:
+        email: Email
+        resend_unlock_instructions: Resend unlock instructions
+  errors:
+    messages:
+      not_saved: Not saved
+  hello: Hello world
+  home:
+    index:
+      hey_there: Hey there
+  kaminari:
+    paginator:
+      next: Next
+      of: Of
+      previous: Previous
+      results: Results
+      showing: Showing
+      to: To
+  layouts:
+    application:
+      discord: Discord
+    nav:
+      help_with_covid: Help with covid
+    nav_links:
+      all_projects: All projects
+      log_in: Log in
+      log_out: Log out
+      offers: Offers
+      profile: Profile
+      sign_up: Sign up
+      volunteered_projects: Volunteered projects
+      volunteers: Volunteers
+      your_projects: Your projects
+  offers:
+    edit:
+      edit_offer: Edit offer
+      save_offer: Save offer
+      this_information_will_be_displayed_publicly: This information will be displayed publicly
+    index:
+      create_offer: Create offer
+      created: Created
+      offers_deals_and_benefits_from_organizations_that_want_to_help_out_with_covid-19: Offers deals and benefits from organizations that want to help out with covid-19
+      organizations_are_helping_out_covid-19_projects_too: Organizations are helping out covid-19 projects too
+      sign_up: Sign up
+    new:
+      create_new_offer: Create new offer
+      create_offer: Create offer
+      this_information_will_be_displayed_publicly: This information will be displayed
+        publicly
+    offer_form:
+      describe_the_offer: Describe the offer
+      for_instance_amazon_-_free_aws_hosting: For instance amazon - free aws hosting
+      how_this_offer_can_be_redeemed_perhaps_email_perhaps_somehow_else: How this offer can be redeemed perhaps email perhaps somehow else
+      how_to_redeem_the_offer: How to redeem the offer
+      if_the_offer_has_any_geographical_limitation_global_otherwise: If the offer has any geographical limitation global otherwise
+      location: Location
+      name: Name
+      so_there_are_no_wrong_expectations: So there are no wrong expectations
+      what_are_the_limitations: What are the limitations
+      write_a_few_sentences_about_what_you_are_offering: Write a few sentences about
+        what you are offering
+    show:
+      description: Description
+      edit: Edit
+      how_to_redeem_it: How to redeem it
+      limitations: Limitations
+      location: Location
+      name: Name
+  partials:
+    filters:
+      show_all_model_model_color_: 'Show all model model color '
+  project_mailer:
+    new_volunteer:
+      about: About
+      current_volunteers_are_visible_on_your_project_page: Current volunteers are
+        visible on your project page
+      email: Email
+      for_any_feedback_or_questions_regarding_helpwithcovidcom_let_us_know_at_https_discordgg_875ahxs: For any feedback or questions regarding helpwithcovidcom let us know at https discordgg 875ahxs
+      hey_there: Hey there
+      name: Name
+      notes: Notes
+      volunteer_details: Volunteer details
+      you_got_a_new_volunteer_for_your_project: You got a new volunteer for your project
+  projects:
+    edit:
+      edit_project: Edit project
+      save_project: Save project
+      this_information_will_be_displayed_publicly: This information will be displayed
+        publicly
+    index:
+      create_project: Create project
+      created: Created
+      fill_out_your_profile: Fill out your profile
+      no_volunteers: No volunteers
+      sign_up: Sign up
+    new:
+      create_new_project: Create new project
+      create_project: Create project
+      this_information_will_be_displayed_publicly: This information will be displayed publicly
+    project_form:
+      best_way_to_get_in_touch: Best way to get in touch
+      describe_your_project: Describe your project
+      do_volunteers_need_to_live_in_a_certain_location_write_remote_otherwise: Do volunteers need to live in a certain location write remote otherwise
+      location: Location
+      name: Name
+      optional: Optional
+      project_type: Project type
+      skills_needed: Skills needed
+      tell_us_about_you_and_your_teammates: Tell us about you and your teammates
+      tell_volunteers_how_they_might_help_you_be_specific_if_its_tech_mention_the_stack: Tell volunteers how they might help you be specific if its tech mention the stack
+      what_do_you_need_help_with: What do you need help with
+      who_is_already_working_on_this: Who is already working on this
+      write_a_few_sentences_about_what_you_are_making_and_the_end_goal: Write a few sentences about what you are making and the end goal
+      youll_get_an_email_when_a_volunteer_applies_but_perhaps_there_is_another_way_like_email_or_discord: You'll get an email when a volunteer applies but perhaps there is another way like email or discord
+    show:
+      apply_for_funding: Apply for funding
+      cancel_volunteer_offer: Cancel volunteer offer
+      covid-19_task_force: Covid-19 task force
+      delete: Delete
+      description: Description
+      dont_show_this_again: Dont show this again
+      edit: Edit
+      export_volunteers_to_csv: Export volunteers to csv
+      highlight: Highlight
+      how_to_get_in_touch: How to get in touch
+      https_formsgle_5glzbuueyxzyynrp8: Https formsgle 5glzbuueyxzyynrp8
+      hwc: Hwc
+      javascriptvoid0: Javascriptvoid0
+      location: Location
+      looking_for: Looking for
+      no_volunteers: No volunteers
+      project_type: Project type
+      remove_highlight: Remove highlight
+      send_email_to_volunteers: Send email to volunteers
+      sign_up_to_volunteer: Sign up to volunteer
+      skills_needed: Skills needed
+      validated_or_established_project_with_large_impact: Validated or established
+        project with large impact
+      volunteer: Volunteer
+      volunteers: Volunteers
+      ? we_try_our_best_to_surface_interesting_projects_with_lots_of_potential_that_just_need_a_bit_of_a_boost_write_to_us_if_thats_the_case
+        : We try our best to surface interesting projects with lots of potential that
+        just need a bit of a boost write to us if thats the case
+      who_is_already_working_on_this: Who is already working on this

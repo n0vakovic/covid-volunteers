@@ -4,10 +4,10 @@
       <div>
         <div>
           <h3 class="text-lg leading-6 font-medium text-gray-900">
-            Edit offer <%= @offer.name %>
+            <%= I18n.t("offers.edit.edit_offer", :default => "Edit offer ") %><%= @offer.name %>
           </h3>
           <p class="mt-1 max-w-2xl text-sm leading-5 text-gray-500">
-            This information will be displayed publicly.
+            <%= I18n.t("offers.edit.this_information_will_be_displayed_publicly", :default => "This information will be displayed publicly.") %>
           </p>
         </div>
 
@@ -18,7 +18,7 @@
       <div class="flex justify-end">
         <span class="ml-3 inline-flex rounded-md shadow-sm">
           <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
-            Save offer
+            <%= I18n.t("offers.edit.save_offer", :default => "Save offer") %>
           </button>
         </span>
       </div>
